@@ -1,0 +1,20 @@
+@use '../util' as *;
+
+.gallery{
+    @include breakpoint-down(medium){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: rem(70);
+    }
+    @include breakpoint(large)
+    {
+        margin-top: rem(160);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    img{
+        width: 100%;
+    }
+    
+}

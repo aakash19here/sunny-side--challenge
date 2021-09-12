@@ -1,0 +1,47 @@
+@use '../util' as *;
+
+//For Flexbox
+.flex{
+    display: flex;
+    &__jc-sb{
+        justify-content: space-between;
+    }
+    &__jc-c{
+        justify-content: center;
+    }
+    &__jc-ai{
+        align-items: center;
+    }
+    &__jc-end{
+        justify-content: flex-end;
+    }
+}
+//For Grid
+.grid{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    &__ji-c{
+        justify-items: center;
+    }
+    &__ai-c{
+        align-items: center;
+    }
+    @include breakpoint(large){
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+//Hide
+.hide-for-mobile{
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+
+.hide-for-desktop{
+    @include breakpoint(large){
+        display: none;
+    }
+}

@@ -1,0 +1,63 @@
+@use '../util' as *;
+
+.footer {
+    @include breakpoint-down(medium){
+        text-align: center;
+        padding-top: rem(50);
+        background-color: #91d4c6;
+        .links{
+            margin-top: rem(50);
+            a{
+                margin-right: rem(30);
+                color:  #2C7566;
+                font-family: 'Barlow', sans-serif;
+            }
+            a:hover{
+                
+                    color: white;
+                    transition: all 0.3s;
+                }
+        
+        }
+        .socials{
+            margin-top: rem(72);
+            a{
+                margin-right: rem(22);
+            }
+        }
+        
+    }
+    @include breakpoint(large)
+    {
+        text-align: center;
+        padding-top: rem(70);
+        background-color: #91d4c6;
+        .links{
+            margin-top: rem(65);
+            a{
+                margin-right: rem(50);
+                color:  #2C7566;
+                font-family: 'Barlow', sans-serif;
+            }
+            a:hover{
+            color: white;
+            transition: all 0.3s;
+            }
+            
+        }
+        .socials{
+            margin-top: rem(80);
+            padding-bottom: rem(60);
+            a{
+                margin-right: rem(30);
+            }
+            a:hover path{
+                fill: white;
+                transition: 1s;
+            }
+        }
+    }
+
+    
+  }
+  

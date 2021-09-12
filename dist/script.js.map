@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["console","log","test"],"mappings":"AAAA,aAAAA,QAAQC,IAAI,SAEZ,IAAMC,KAAO,WACZF,QAAQC,IAAI","file":"script.js","sourcesContent":["console.log('HELLO');\r\n\r\nconst test = () => {\r\n\tconsole.log('this is a test');\r\n};\r\n"]}

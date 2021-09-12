@@ -1,0 +1,74 @@
+@use '../util' as *;
+
+.testimonial{
+    @include breakpoint-down(medium){
+        text-align: center;
+        padding-top: rem(55);
+        img{
+            border-radius: 50%;
+            width:100px;
+            height:100px;
+        }
+        .heading{
+            padding-bottom: rem(45);
+            font-family: 'Fraunces', serif;  
+            font-size: rem(18);
+            color: hsl(210, 4%, 67%);
+            text-transform: uppercase;
+            letter-spacing: rem(5);
+        }
+        .txt{
+            padding: 0 rem(30);
+            color:hsl(232, 10%, 55%) ;
+            font-family: 'Barlow', sans-serif;
+        }
+        .name{
+            font-family: 'Fraunces', serif;
+        }
+        .work{
+            font-family: 'Barlow', sans-serif;
+            color:hsl(210, 4%, 67%);
+            margin-bottom: rem(50);
+        }
+    }
+    @include breakpoint(large){
+        text-align: center;
+    padding-top: rem(160);
+        img{
+            border-radius: 50%;
+            width:100px;
+            height:100px;
+        }
+        .heading{
+            font-family: 'Fraunces', serif;  
+            font-size: rem(22);
+            color: hsl(210, 4%, 67%);
+            text-transform: uppercase;
+            letter-spacing: rem(5);
+        }
+        .testimonials__grid{
+            display: grid;
+            padding-top: rem(80);
+            padding-left: rem(170);
+            padding-right: rem(170);
+            gap: 0 rem(40);
+            grid-template-columns: 1fr 1fr 1fr;
+            .testimonials{
+                .txt{
+                    line-height: rem(30);
+                    color:  hsl(232, 10%, 55%);
+                    font-family: 'Barlow', sans-serif;
+                }
+                .name{
+                    font-family: 'Fraunces', serif;
+                    padding-top: rem(75);
+                }
+                .work{
+                    font-family: 'Barlow', sans-serif;
+                    color:hsl(210, 4%, 67%);
+                }
+            }
+        }
+    }
+   
+}
